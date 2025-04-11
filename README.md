@@ -16,12 +16,12 @@ To write a python program to find the inverse of a matrix
 ## Program:
 import numpy as np
 
-# Define the matrix
+
 A = np.array([[6, 2, 3],
               [3, 1, 1],
               [10, 3, 4]])
 
-# Check if the matrix is invertible (i.e., determinant is not zero)
+
 det = np.linalg.det(A)
 
 if det == 0:
