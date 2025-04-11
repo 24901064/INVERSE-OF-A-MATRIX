@@ -14,19 +14,27 @@ To write a python program to find the inverse of a matrix
 4. Print the inverse matrix A_inv. 
 
 ## Program:
-~~~
 import numpy as np
 
+# Define the matrix
 A = np.array([[6, 2, 3],
               [3, 1, 1],
               [10, 3, 4]])
 
+# Check if the matrix is invertible (i.e., determinant is not zero)
+det = np.linalg.det(A)
 
-A_inv = np.linalg.inv(A)
-print(A_inv)
-~~~
+if det == 0:
+    print("The matrix is not invertible (determinant is zero).")
+else:
+    # Calculate the inverse
+    A_inv = np.linalg.inv(A)
+    print("Inverse of the matrix:")
+    print(A_inv)
+
 ## Output:
-![Screenshot 2025-03-27 201014](https://github.com/user-attachments/assets/ab8779c4-8027-4eb1-815d-a2ad3923e783)
+![Screenshot 2025-04-11 215310](https://github.com/user-attachments/assets/24fbfbc0-e221-41e0-82bc-8eb9d59a77f0)
+
 
 ## Result:
 Thus the inverse of given matrix is successfully solved using python program
