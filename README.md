@@ -14,6 +14,7 @@ To write a python program to find the inverse of a matrix
 7. end
 
 ## Program:
+```
 import numpy as np
 
 
@@ -31,7 +32,7 @@ else:
     A_inv = np.linalg.inv(A)
     print("Inverse of the matrix:")
     print(A_inv)
-
+```
 ## Output:
 ![Screenshot 2025-04-11 215310](https://github.com/user-attachments/assets/24fbfbc0-e221-41e0-82bc-8eb9d59a77f0)
 
